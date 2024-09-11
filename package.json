@@ -1,0 +1,17 @@
+{
+  "name": "jenkins-eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.ts",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint script.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-formatter-checkstyle": "^8.40.0",
+    "typescript": "^4.0.0"
+  }
+}

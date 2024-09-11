@@ -1,0 +1,19 @@
+// eslint.config.js
+import typescriptEslintParser from '@typescript-eslint/parser';
+import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
+
+export default [
+  {
+    files: ['**/*.ts'], // Ciljamo sve TypeScript datoteke
+    languageOptions: {
+      parser: typescriptEslintParser, // Koristimo TypeScript parser
+    },
+    plugins: {
+      '@typescript-eslint': typescriptEslintPlugin, // Uvozimo TypeScript ESLint plugin
+    },
+    rules: {
+      'semi': ['error', 'always'], // Pravilo za obavezne tačke-zareze
+      ...typescriptEslintPlugin.configs.recommended.rules, // Preporučena pravila za TypeScript
+    },
+  }
+];
